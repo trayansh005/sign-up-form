@@ -1,0 +1,132 @@
+@font-face {
+	font-family: Nexa;
+	src: url(Fonts/Nexa-Trial-Black.woff);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Quicksand", sans-serif;
+	background: #000;
+	color: #fff;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	background: #1a1b4b;
+	width: 80%;
+}
+
+img {
+	display: block;
+	height: 100vh;
+}
+
+.sidebar {
+	position: relative;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 120px;
+	background: rgb(0, 0, 0, 0.5);
+	width: 100%;
+}
+
+.logo img {
+	height: 100%;
+}
+
+.logo h1 {
+	font-family: Nexa, sans-serif;
+}
+
+.desc {
+	padding: 7% 5%;
+	font-size: 20px;
+}
+
+form {
+	background: #292a73;
+	padding: 3% 5%;
+}
+
+.form-title {
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+
+input {
+	padding: 2px;
+	background: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	margin-top: 2px;
+}
+
+input:focus {
+	outline: 1px solid #1a1b4b;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.name,
+.email,
+.password {
+	display: flex;
+	gap: 50px;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+.name,
+.email {
+	margin-bottom: 15px;
+}
+
+.create-acc-wrapper {
+	padding: 0 5%;
+}
+
+.create-acc-btn {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 12px 24px;
+	background: #3a9efd;
+	color: #000;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.create-acc-btn:hover {
+	cursor: pointer;
+	background: #064c8d;
+}
+
+.login {
+	color: rgb(40, 53, 237);
+	font-weight: bold;
+}
